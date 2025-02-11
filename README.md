@@ -1,14 +1,22 @@
-# pos-vue
+# SmartPos
 
-This template should help get you started developing with Vue 3 in Vite.
+SmartPos is a point-of-sale management project that includes:
 
-## Recommended IDE Setup
+- Inventory management
+- Discount coupon management
+- Sales reporting
+- Daily sales tracking
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Technologies Used
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- **@formkit/themes & @formkit/vue**: Library for creating forms in Vue with validations and customizable themes.
+- **firebase**: Platform for cloud storage, authentication, and real-time databases.
+- **pinia**: State management system for Vue 3, an alternative to Vuex, simpler and more efficient.
+- **uid**: Unique identifier generator.
+- **vue**: Progressive JavaScript framework for building user interfaces.
+- **vue-router**: Routing system for Vue.js that enables navigation between components.
+- **vue-tailwind-datepicker**: Date picker based on Tailwind CSS and Vue.
+- **vuefire**: Integration between Vue and Firebase for real-time data synchronization.
 
 ## Project Setup
 

@@ -1,35 +1,31 @@
 <script setup>
-    import { RouterLink } from 'vue-router'
-    import Link from './Link.vue';
-    import Logo from './Logo.vue';
+import { RouterLink } from "vue-router";
+import Link from "./Link.vue";
+import Logo from "./Logo.vue";
 </script>
 
-
 <template>
-    <header class="px-10 py-5 bg-gray-700 flex justify-between absolute top-0 w-full z-10">
-        <div>
-            <Logo />
-        </div>
+  <header
+    class="px-10 py-5 bg-gray-700 flex flex-col md:flex-row md:justify-between absolute top-0 w-full z-10"
+  >
+    <div class="mb-4 md:mb-0">
+      <Logo />
+    </div>
 
-        <nav>
-            <RouterLink
-                :to="{name: 'products'}"
-                class="rounded text-white font-bold p-2"
-            >
-                Productos
-            </RouterLink>
-            <RouterLink
-                :to="{name: 'sales'}"
-                class="rounded text-white font-bold p-2"
-            >
-                Ventas
-            </RouterLink>
-            <Link
-                to="shop"
-            >
-                Ir a Tienda
-            </Link>
-        </nav>
-    </header>
+    <nav class="flex flex-col md:flex-row gap-4">
+      <RouterLink
+        :to="{ name: 'products' }"
+        class="rounded text-white font-bold p-2"
+      >
+        Productos
+      </RouterLink>
+      <RouterLink
+        :to="{ name: 'sales' }"
+        class="rounded text-white font-bold p-2"
+      >
+        Ventas
+      </RouterLink>
+      <Link to="shop"> Ir a Tienda </Link>
+    </nav>
+  </header>
 </template>
-
