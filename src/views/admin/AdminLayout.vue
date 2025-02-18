@@ -1,11 +1,11 @@
 <script setup>
-    import AdminNav from '@/components/AdminNav.vue';
+import AdminNav from "@/components/AdminNav.vue";
 </script>
 
 <template>
-    <AdminNav />
+  <AdminNav />
 
-    <div class="pt-32 container mx-auto lg:min-h-screen">
-        <RouterView />
-    </div>
+  <div class="pt-72 md:pt-32 container mx-auto lg:min-h-screen">
+    <RouterView />
+  </div>
 </template>
